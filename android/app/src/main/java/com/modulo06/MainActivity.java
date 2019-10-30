@@ -1,4 +1,4 @@
-package com.modulo06;
+package com.felipebergamin.ghrepos;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
