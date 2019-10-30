@@ -37,11 +37,11 @@ public class MainApplication extends Application implements ReactApplication {
       // packages.add(new MyReactNativePackage());
       for(ReactPackage reactPackage: packages) {
         if (reactPackage instanceof CodePush) {
-          //packages.remove(reactPackage);
-          reactPackage = new CodePush(BuildConfig.CODEPUSH_KEY,getApplicationContext(),BuildConfig.DEBUG);
+          packages.remove(reactPackage);
+          //reactPackage = new CodePush(BuildConfig.CODEPUSH_KEY,getApplicationContext(),BuildConfig.DEBUG);
         }
       }
-      //packages.add(new CodePush(BuildConfig.CODEPUSH_KEY, getApplicationContext(), BuildConfig.DEBUG));
+      packages.add(new CodePush(BuildConfig.CODEPUSH_KEY, getApplicationContext(), BuildConfig.DEBUG));
       return packages;
     }
 
