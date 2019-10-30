@@ -83,7 +83,7 @@ export default class Main extends React.Component {
           <Input
             autoCorrect={false}
             autoCapitalize="none"
-            placeholder="Usuário no GitHub"
+            placeholder="Informe o usuário no GitHub"
             value={newUser}
             onChangeText={text => this.setState({ newUser: text })}
             returnKeyType="send"
